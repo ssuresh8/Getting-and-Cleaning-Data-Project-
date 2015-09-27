@@ -2,6 +2,9 @@
 
 The goal is to prepare tidy data that can be used for later analysis. 
 
+The Codebook.MD file provides more information on the data set used and the variables and what run_analys.R does. 
+
+
 the run_analyis.R file will do the following:
 
 Merges the training and the test sets to create one data set.
