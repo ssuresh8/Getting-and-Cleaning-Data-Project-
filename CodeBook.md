@@ -15,7 +15,14 @@ Here is a discription of the data files that are used for the project:
 - 'features.txt': List of all features.
 
 - 'activity_labels.txt': Links the class labels with their activity name.
-
+- Here are the activity labels:
+- WALKING            
+- WALKING_UPSTAIRS   
+- WALKING_DOWNSTAIRS 
+- SITTING           
+- STANDING          
+- LAYING            
+- 
 - 'train/X_train.txt': Training set.
 
 - 'train/y_train.txt': Training labels.
