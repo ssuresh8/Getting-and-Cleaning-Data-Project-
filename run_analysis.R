@@ -45,7 +45,16 @@ msFeat <- featLbls$V2[grep("mean\\(\\)|std\\(\\)", featLbls$V2)]
 #to get the data set with mean and std and subj and lbls, subset with these names
 colNam<-c(as.character(msFeat), "subject", "activity" )
 FinData<-subset(MergedData,select=colNam)
-#rename the column names with hte full names in the activity labels
+
+#put in he activity labels using a for loop
+i = 1
+for (actLbl in actLbls$V2) {
+  FinData$activity <- gsub(i, actLbl, FinData$activity)
+  i <- i + 1
+}
+
+
+#rename the column names with hte full names in the feature labels
 names(FinData)<-gsub("^t", "time", names(FinData))
 names(FinData)<-gsub("^f", "frequency", names(FinData))
 names(FinData)<-gsub("Acc", "Accelerometer", names(FinData))
